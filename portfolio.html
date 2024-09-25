@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+<title>Yeswanth Shankar Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+
+<script type = "text/javascript">
+
+function download(url, filename) {
+  fetch(url)
+    .then(response => response.blob())
+    .then(blob => {
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = filename;
+      link.click();
+  })
+  .catch(console.error);
+}
+</script>
+
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+	<img src="https://yeshu0046.github.io/yeswanthshankar.github.io/IMG_2981.JPG" style="height: 100px; width:100%">
+	<a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+		<i class="fa fa-home w3-xxlarge"></i>
+		<p>HOME</p>
+	</a>
+	<a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+		<i class="fa fa-user w3-xxlarge"></i>
+		<p>ABOUT</p>
+		</a>
+	<a href="#Experience" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+		<i class="fa fa-briefcase w3-xxlarge"></i>
+		<p>EXPERIENCE</p>
+	</a>
+	  </a>
+	<a href="#Projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+		<i class="fa fa-eye w3-xxlarge"></i>
+		<p>PROJECTS</p>
+	 </a>
+	<a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+		<i class="fa fa-envelope w3-xxlarge"></i>
+		<p>CONTACT</p>
+	</a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#Experience" class="w3-bar-item w3-button" style="width:25% !important">EXPERIENCE</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo" style="font-weight: bold; letter-spacing: 3px;">
+        <span class="w3-hide-small">Hello, I'm</span> Yeswanth Shankar
+    </h1>
+    <p style="font-size: 1.2rem; max-width: 600px; margin: 20px auto; line-height: 1.6; text-align: center; color: #f1f1f1;">
+        Welcome to my personal website, where you can explore my professional journey and projects. 
+    </p>
+    <p style="font-size: 1.2rem; max-width: 600px; margin: 20px auto; line-height: 1.6; text-align: center; color: #f1f1f1;">
+        This platform highlights my skills, experiences, and creativity, offering a glimpse into my expertise.
+    </p>
+    
+    <p style="
+    font-size: 1.5em; 
+    font-weight: bold; 
+    color: #ff5722; /* Bright orange color */
+    letter-spacing: 1.5px; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    padding: 10px 0; 
+    text-align: center;
+">
+    Data/Business Analyst
+</p>
+
+    <img src="https://yeshu0046.github.io/yeswanthshankar.github.io/IMG_2981.JPG" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey" style="font-size: 2.5em; font-weight: bold; letter-spacing: 2px; text-align: center;">Summary</h2>
+    <hr style="width: 200px; border-top: 3px solid #ffcc00; margin: 0 auto;" class="w3-opacity">
+    <p style="font-size: 1.2em; line-height: 1.8em; max-width: 800px; margin: 20px auto; text-align: justify;">
+        I am a recent graduate (<strong>May 2024</strong>) with a Master’s in Information Systems from <strong>Cleveland State University</strong>, Cleveland, OH. I have extensive experience in <strong>data science, analytics, software development</strong>, and <strong>business operations</strong>. My notable academic projects include developing healthcare analytics and supply chain optimization dashboards using <strong>Tableau, SQL</strong>, and <strong>Python</strong>. 
+        Currently, I am working as a <strong>Data Science and Analytics Intern</strong> at <strong>Alpha Star Ventures</strong>, focusing on <strong>customer segmentation</strong> and <strong>forecasting</strong> using <strong>Python</strong> and <strong>SQL</strong>.
+    </p>
+    <p style="font-size: 1.2em; line-height: 1.8em; max-width: 800px; margin: 20px auto; text-align: justify;">
+        My past experience includes working as a <strong>Software Developer</strong> at <strong>IppoPay Technologies</strong>, where I led pay module development using <strong>JavaScript</strong> and <strong>Node.js</strong>. I also served as a <strong>Business Operations Analyst</strong> at <strong>Anywhereworks</strong>, where I focused on issue simulation, bug tracking, and customer support. Additionally, I have proven <strong>digital marketing</strong> skills, successfully transforming <strong>50+ clients</strong> into social media personalities through <strong>data-driven strategies</strong>.
+    </p>
+    <p style="font-size: 1.2em; line-height: 1.8em; max-width: 800px; margin: 20px auto; text-align: justify;">
+        I hold certifications in <strong>Generative AI, Data Analytics, Python, Digital Marketing</strong>, and <strong>Advanced RPA Development</strong>.
+    </p>
+</div>
+<div class="w3-content w3-padding-64 w3-text-grey" style="max-width: 800px; margin: 0 auto;">
+    <h3 class="w3-padding-16 w3-text-light-grey" style="border-bottom: 2px solid #ffcc00; display: inline-block; padding-bottom: 8px; text-align: center; width: 100%;">My Skills</h3>
+    
+    <p class="w3-wide" style="text-align: center;">Generative AI</p>
+    <div class="w3-light-grey w3-round-large" style="margin-bottom: 16px;">
+        <div class="w3-dark-grey w3-round-large" style="height:28px;width:96%;transition: width 0.4s;"></div>
+    </div>
+    
+    <p class="w3-wide" style="text-align: center;">Python</p>
+    <div class="w3-light-grey w3-round-large" style="margin-bottom: 16px;">
+        <div class="w3-dark-grey w3-round-large" style="height:28px;width:95%;transition: width 0.4s;"></div>
+    </div>
+    
+    <p class="w3-wide" style="text-align: center;">SQL</p>
+    <div class="w3-light-grey w3-round-large" style="margin-bottom: 16px;">
+        <div class="w3-dark-grey w3-round-large" style="height:28px;width:99%;transition: width 0.4s;"></div>
+    </div>
+    
+    <p class="w3-wide" style="text-align: center;">Tableau</p>
+    <div class="w3-light-grey w3-round-large" style="margin-bottom: 16px;">
+        <div class="w3-dark-grey w3-round-large" style="height:28px;width:98%;transition: width 0.4s;"></div>
+    </div>
+    
+    <p class="w3-wide" style="text-align: center;">PowerBI</p>
+    <div class="w3-light-grey w3-round-large" style="margin-bottom: 16px;">
+        <div class="w3-dark-grey w3-round-large" style="height:28px;width:90%;transition: width 0.4s;"></div>
+    </div>
+    
+    <p class="w3-wide" style="text-align: center;">Murex</p>
+    <div class="w3-light-grey w3-round-large" style="margin-bottom: 16px;">
+        <div class="w3-dark-grey w3-round-large" style="height:28px;width:75%;transition: width 0.4s;"></div>
+    </div>
+    
+    <p class="w3-wide" style="text-align: center;">JavaScript</p>
+    <div class="w3-light-grey w3-round-large" style="margin-bottom: 16px;">
+        <div class="w3-dark-grey w3-round-large" style="height:28px;width:95%;transition: width 0.4s;"></div>
+    </div>
+    
+    <p class="w3-wide" style="text-align: center;">Node.js</p>
+    <div class="w3-light-grey w3-round-large" style="margin-bottom: 16px;">
+        <div class="w3-dark-grey w3-round-large" style="height:28px;width:95%;transition: width 0.4s;"></div>
+    </div>
+    
+    <p class="w3-wide" style="text-align: center;">HTML</p>
+    <div class="w3-light-grey w3-round-large" style="margin-bottom: 16px;">
+        <div class="w3-dark-grey w3-round-large" style="height:28px;width:90%;transition: width 0.4s;"></div>
+    </div>
+    
+    <p class="w3-wide" style="text-align: center;">AWS</p>
+    <div class="w3-light-grey w3-round-large" style="margin-bottom: 16px;">
+        <div class="w3-dark-grey w3-round-large" style="height:28px;width:95%;transition: width 0.4s;"></div>
+    </div>
+</div>
+<div style="text-align: center;">
+    <button class="w3-button w3-padding-large w3-section" 
+        style="background-color: #ffcc00; color: #1a1a1a; font-weight: bold; border: none; border-radius: 8px; cursor: pointer; transition: background-color 0.3s ease; font-size: 16px;" 
+        onmouseover="this.style.backgroundColor='#e6b800'" 
+        onmouseout="this.style.backgroundColor='#ffcc00'" 
+        onclick="download('https://yeshu0046.github.io/yeswanthshankar.github.io/Yeswanth_Shankar_DA_Resume.pdf', 'resume.pdf')">
+        <i class="fa fa-download" style="margin-right: 8px;"></i> Download Resume
+    </button>
+</div>
+<br>
+
+    <!-- Testimonials -->
+    <div class="w3-content w3-justify w3-padding-64 experience-container" id="Experience">
+        <h2 class="section-heading">Experience</h2>
+      
+        <!-- Data Science and Analytics Intern -->
+        <div class="experience-card">
+          <h3 class="job-title">Data Science and Analytics Intern</h3>
+          <p class="company-info"><strong>Alpha Star Ventures</strong> | September 2024 - Present (Full-Time)</p>
+          <p class="job-description">I developed a customer segmentation and forecasting project using Python, SQL, and Tableau.</p>
+          <ul class="contributions-list">
+            <li><strong>Data Cleaning & Preprocessing:</strong> Extracted and prepared data using Python and SQL, ensuring high data quality.</li>
+            <li><strong>Exploratory Data Analysis (EDA):</strong> Identified key patterns and variables for effective segmentation.</li>
+            <li><strong>Clustering & Segmentation:</strong> Applied machine learning techniques like K-Means to group customers.</li>
+            <li><strong>Predictive Modeling:</strong> Built models using Random Forests and XGBoost to forecast customer behavior.</li>
+            <li><strong>Visualization:</strong> Created Tableau dashboards, providing actionable insights on customer trends.</li>
+          </ul>
+          <p class="impact-text">This project improved customer targeting and strategic decision-making, refining my skills in data analysis and visualization.</p>
+        </div>
+      
+        <!-- Student Supervisor - Operations -->
+        <div class="experience-card">
+          <h3 class="job-title">Student Supervisor - Operations</h3>
+          <p class="company-info"><strong>Cleveland State University</strong> | Aug 2022 – May 2024 (Part-Time)</p>
+          <p class="job-description">I managed operations at the Wolstein Center, coordinating a team of 150 staff members.</p>
+          <ul class="contributions-list">
+            <li><strong>Team Leadership:</strong> Coordinated a large team, ensuring smooth operations during events.</li>
+            <li><strong>Workflow Optimization:</strong> Enhanced productivity by streamlining workflows.</li>
+            <li><strong>Customer Satisfaction:</strong> Improved customer service, resulting in positive feedback.</li>
+            <li><strong>Operational Efficiency:</strong> Managed scheduling, resource allocation, and conflict resolution.</li>
+          </ul>
+          <p class="impact-text">This role developed my team management, operational efficiency, and leadership skills.</p>
+        </div>
+      
+        <!-- Software Developer -->
+        <div class="experience-card">
+          <h3 class="job-title">Software Developer</h3>
+          <p class="company-info"><strong>IppoPay Technologies</strong> | Feb 2022 – July 2022 (Full-Time)</p>
+          <p class="job-description">I played a key role in leading the development of a payment module using JavaScript and Node.js.</p>
+          <ul class="contributions-list">
+            <li><strong>Back-End Development:</strong> Designed and developed the back-end architecture for the payment module.</li>
+            <li><strong>Coding & Testing:</strong> Wrote clean, efficient code in JavaScript and Node.js, ensuring robust functionality.</li>
+            <li><strong>Project Management:</strong> Managed timelines and coordinated with team members to meet milestones.</li>
+            <li><strong>Bug Tracking & Resolution:</strong> Implemented a bug tracking system to identify and resolve issues promptly.</li>
+          </ul>
+          <p class="impact-text">This role enhanced my skills in back-end development, project management, and quality assurance.</p>
+        </div>
+      
+        <!-- Business Operations Analyst -->
+        <div class="experience-card">
+          <h3 class="job-title">Business Operations Analyst</h3>
+          <p class="company-info"><strong>Anywhereworks</strong> | Oct 2021 – Jan 2022 (Full-Time)</p>
+          <p class="job-description">I supported the development and operational improvement of the company's products and services.</p>
+          <ul class="contributions-list">
+            <li><strong>Collaboration with Internal Teams:</strong> Worked closely with developers and product managers.</li>
+            <li><strong>Issue Simulation & Validation:</strong> Developed processes to simulate and validate potential product issues.</li>
+            <li><strong>Customer Support & Bug Tracking:</strong> Managed customer inquiries and tracked bugs using technical tools.</li>
+            <li><strong>Product Issue Resolution:</strong> Identified and resolved root causes of product issues efficiently.</li>
+          </ul>
+          <p class="impact-text">This role sharpened my cross-team collaboration, problem-solving, and customer management skills.</p>
+        </div>
+      
+        <!-- Digital Marketing Analyst -->
+        <div class="experience-card">
+          <h3 class="job-title">Digital Marketing Analyst</h3>
+          <p class="company-info"><strong>Freelance</strong> | Jul 2019 – Jun 2021 (Full-Time)</p>
+          <p class="job-description">I helped transform over 50 clients into prominent social media personalities by using data-driven content creation.</p>
+          <ul class="contributions-list">
+            <li><strong>Trend Analysis:</strong> Monitored industry trends to ensure content strategies were current and effective.</li>
+            <li><strong>Strategic Planning:</strong> Developed customized marketing plans tailored to each client’s brand.</li>
+            <li><strong>Content Creation:</strong> Produced high-quality content that drove organic growth and improved brand visibility.</li>
+            <li><strong>Data-Driven Campaigns:</strong> Leveraged analytics to adjust strategies and enhance campaign performance.</li>
+          </ul>
+          <p class="impact-text">These efforts resulted in significant brand awareness and engagement for clients across industries.</p>
+        </div>
+      
+        <!-- Digital Marketing and Web Applications Development Intern -->
+        <div class="experience-card">
+          <h3 class="job-title">Digital Marketing and Web Applications Development Intern</h3>
+          <p class="company-info"><strong>Benfy Consulting</strong> | Oct 2017 (Part-Time)</p>
+          <p class="job-description">I gained hands-on experience in digital marketing and web development, contributing to various projects.</p>
+          <ul class="contributions-list">
+            <li><strong>Campaign Management:</strong> Planned and executed digital marketing campaigns across multiple platforms.</li>
+            <li><strong>Brand Maintenance:</strong> Managed clients' social media accounts and enhanced their online presence.</li>
+            <li><strong>Web Application Development:</strong> Developed web features using HTML, CSS, and JavaScript.</li>
+          </ul>
+          <p class="impact-text">This internship gave me a well-rounded foundation in digital marketing and web development.</p>
+        </div>
+      </div>
+      
+      <!-- CSS -->
+      <style>
+        .experience-container {
+          background-color: #1e1e1e;
+          padding: 30px; /* Reduced padding */
+          color: #ccc;
+        }
+      
+        .section-heading {
+          font-size: 2.5em; /* Slightly smaller */
+          text-align: center;
+          color: #f1f1f1;
+          font-weight: bold;
+          text-transform: uppercase;
+          margin-bottom: 40px; /* Reduced margin */
+          position: relative;
+        }
+      
+        .section-heading::after {
+          content: '';
+          width: 80px; /* Slightly smaller */
+          height: 3px; /* Slightly smaller */
+          background-color: #f39c12;
+          display: block;
+          margin: 8px auto; /* Slightly reduced margin */
+        }
+      
+        .experience-card {
+          background-color: #333;
+          border-radius: 10px;
+          padding: 15px; /* Reduced padding */
+          margin-bottom: 20px; /* Reduced margin */
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Slightly lighter shadow */
+          transition: transform 0.3s ease;
+        }
+      
+        .experience-card:hover {
+          transform: translateY(-7px); /* Reduced hover effect */
+        }
+      
+        .job-title {
+          font-size: 1.6em; /* Slightly smaller */
+          color: #f39c12;
+          margin-bottom: 8px; /* Reduced margin */
+        }
+      
+        .company-info {
+          font-size: 1em; /* Slightly smaller */
+          color: #f1f1f1;
+        }
+      
+        .job-description {
+          margin-top: 8px; /* Reduced margin */
+          font-size: 1.1em; /* Slightly smaller */
+          color: #e0e0e0;
+        }
+      
+        .contributions-list {
+          list-style-type: none;
+          padding-left: 0;
+          margin-top: 15px; /* Reduced margin */
+        }
+      
+        .contributions-list li {
+          padding: 6px 0; /* Reduced padding */
+          font-size: 0.9em; /* Slightly smaller */
+          color: #b0b0b0;
+          border-left: 3px solid #f39c12; /* Slightly smaller border */
+          padding-left: 10px; /* Reduced padding */
+          margin-bottom: 8px; /* Reduced margin */
+        }
+      
+        .contributions-list li strong {
+          color: #f39c12;
+        }
+      
+        .impact-text {
+          font-size: 0.95em; /* Slightly smaller */
+          color: #f1f1f1;
+          margin-top: 15px; /* Reduced margin */
+        }
+      </style>
+      
+<!-- End About Section -->
+
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="Projects">
+    <h2 class="w3-text-light-grey" style="text-align: center;">My Projects</h2> <!-- Centered Title -->
+    <hr style="width:200px; margin: 0 auto;" class="w3-opacity"> <!-- Center the line below the title -->
+
+    <!-- Flexbox grid for projects -->
+    <div class="project-container" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: stretch;">
+
+        <!-- Project 1: Healthcare Analytics Dashboard -->
+        <div class="project-card w3-card-4 w3-hover-shadow" style="flex: 1 1 calc(50% - 40px); padding: 16px; margin: 10px; max-width: 600px; box-sizing: border-box;">
+            <h3><strong>Healthcare Analytics Dashboard</strong></h3>
+            <p class="w3-text-grey">August 2024</p>
+            <p>Developed a Tableau dashboard providing insights into hospital operations, including data extraction with SQL, preprocessing with Python, and visualizations in Tableau.</p>
+            <button onclick="toggleDetails('healthcare-details')" class="w3-button w3-light-grey">Learn More</button>
+            <div id="healthcare-details" class="w3-hide">
+                <ul>
+                    <li><strong>SQL Extraction:</strong> Data on patient admissions, resource use, and outcomes.</li>
+                    <li><strong>Python Preprocessing:</strong> Data cleaning, normalizing, and predictive modeling.</li>
+                    <li><strong>Tableau Visualization:</strong> Interactive dashboards for decision-makers.</li>
+                </ul>
+                <p><strong>Impact:</strong> Improved hospital decision-making and operational efficiency.</p>
+            </div>
+        </div>
+
+        <!-- Project 2: Supply Chain Optimization Dashboard -->
+        <div class="project-card w3-card-4 w3-hover-shadow" style="flex: 1 1 calc(50% - 40px); padding: 16px; margin: 10px; max-width: 600px; box-sizing: border-box;">
+            <h3><strong>Supply Chain Optimization Dashboard</strong></h3>
+            <p class="w3-text-grey">June 2024</p>
+            <p>Created a dashboard in Tableau and SQL for supply chain metrics, focusing on inventory trends and supplier performance.</p>
+            <button onclick="toggleDetails('supply-chain-details')" class="w3-button w3-light-grey">Learn More</button>
+            <div id="supply-chain-details" class="w3-hide">
+                <ul>
+                    <li><strong>Data Collection:</strong> SQL-based data extraction.</li>
+                    <li><strong>Visualization:</strong> Tableau dashboards for supply chain KPIs.</li>
+                    <li><strong>Insights:</strong> Identified bottlenecks and improved supplier relationships.</li>
+                </ul>
+                <p><strong>Impact:</strong> Reduced costs and improved agility in the supply chain.</p>
+            </div>
+        </div>
+
+        <!-- Project 3: Department Store Management System (DSMS) -->
+        <div class="project-card w3-card-4 w3-hover-shadow" style="flex: 1 1 calc(50% - 40px); padding: 16px; margin: 10px; max-width: 600px; box-sizing: border-box;">
+            <h3><strong>Department Store Management System (DSMS)</strong></h3>
+            <p class="w3-text-grey">December 2022</p>
+            <p>Developed a web app for stock management, dynamic pricing, and enhanced customer service for department stores.</p>
+            <button onclick="toggleDetails('dsms-details')" class="w3-button w3-light-grey">Learn More</button>
+            <div id="dsms-details" class="w3-hide">
+                <ul>
+                    <li><strong>Stock Management:</strong> Real-time inventory tracking.</li>
+                    <li><strong>Dynamic Pricing:</strong> Automated pricing tools.</li>
+                    <li><strong>Customer Service:</strong> Faster transaction processes for better customer experience.</li>
+                </ul>
+                <p><strong>Impact:</strong> Reduced stock discrepancies and improved customer satisfaction by 20%.</p>
+            </div>
+        </div>
+
+        <!-- Project 4: Twitter Sentiment Analysis -->
+        <div class="project-card w3-card-4 w3-hover-shadow" style="flex: 1 1 calc(50% - 40px); padding: 16px; margin: 10px; max-width: 600px; box-sizing: border-box;">
+            <h3><strong>Twitter Sentiment Analysis</strong></h3>
+            <p class="w3-text-grey">April 2018</p>
+            <p>Developed a deep learning model for sentiment analysis using neural networks and word grams to enhance accuracy.</p>
+            <button onclick="toggleDetails('twitter-details')" class="w3-button w3-light-grey">Learn More</button>
+            <div id="twitter-details" class="w3-hide">
+                <ul>
+                    <li><strong>Data Collection:</strong> Gathered a diverse set of tweets for analysis.</li>
+                    <li><strong>Model Development:</strong> Used deep neural networks for sentiment detection.</li>
+                    <li><strong>Performance:</strong> Evaluated against traditional LSTM models, achieving superior accuracy.</li>
+                </ul>
+                <p><strong>Impact:</strong> Demonstrated the effectiveness of deep learning in sentiment analysis.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    function toggleDetails(id) {
+        var x = document.getElementById(id);
+        if (x.classList.contains("w3-hide")) {
+            x.classList.remove("w3-hide");
+        } else {
+            x.classList.add("w3-hide");
+        }
+    }
+</script>
+
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+                            
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+  <!-- Contact Section -->
+<!-- Contact Section -->
+<!-- Contact Section -->
+<div class="contact-section w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width: 50%; margin: 0 auto;" class="w3-opacity">
+    <div class="contact-container">
+      <div class="contact-item">
+        <i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
+        <div>
+          <p class="contact-info"><strong>Location:</strong> Washington DC, US</p>
+        </div>
+      </div>
+  
+      <div class="contact-item">
+        <i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
+        <div>
+          <p class="contact-info"><strong>Phone:</strong> +1 703-554-7517</p>
+        </div>
+      </div>
+  
+      <div class="contact-item">
+        <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
+        <div>
+          <p class="contact-info"><strong>Email:</strong> <a href="mailto:yeshu.0046@gmail.com" class="contact-link">yeshu.0046@gmail.com</a></p>
+        </div>
+      </div>
+  
+      <div class="contact-item">
+        <i class="fa fa-linkedin fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
+        <div>
+          <p class="contact-info"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yeswanth-shankar/" target="_blank" class="contact-link">yeswanth-shankar</a></p>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Updated CSS -->
+<style>
+  .contact-section {
+    color: #ccc;
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto; /* Center the contact items on the page */
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Full width for smaller screens */
+    max-width: 400px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+  }
+
+  .contact-item i {
+    font-size: 2em;
+    color: #f39c12;
+    margin-right: 15px;
+  }
+
+  .contact-info {
+    font-size: 1.2em;
+    color: #f1f1f1;
+    margin: 0;
+  }
+
+  .contact-link {
+    color: #f39c12;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .contact-link:hover {
+    color: #f7c560;
+    text-decoration: underline;
+  }
+
+  .contact-item:hover {
+    transform: translateY(-5px);
+  }
+
+  hr {
+    margin: 0 auto; /* Centers the line */
+    border-color: #f1f1f1;
+    width: 50%; /* Adjusts the width of the line */
+  }
+
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+    }
+
+    .contact-item {
+      max-width: 100%;
+    }
+  }
+</style>
+  <!-- End Contact Section -->
+  </div>
+<!-- END PAGE CONTENT -->
+</div>
+</body>
+</html>
